@@ -1,0 +1,240 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>All About Cats</title>
+    <style>
+        :root {
+            --primary-color: #ff6b6b;
+            --secondary-color: #f7f9fc;
+            --text-color: #333333;
+            --card-bg: #ffffff;
+            --accent-color: #ffa502;
+        }
+
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background-color: var(--secondary-color);
+            color: var(--text-color);
+            line-height: 1.6;
+        }
+
+        header {
+            background: linear-gradient(135deg, #ff6b6b, #ff8e53);
+            color: white;
+            text-align: center;
+            padding: 3rem 1rem;
+        }
+
+        header h1 {
+            font-size: 2.5rem;
+            margin-bottom: 0.5rem;
+        }
+
+        header p {
+            font-size: 1.2rem;
+            opacity: 0.9;
+        }
+
+        nav {
+            background-color: #ffffff;
+            display: flex;
+            justify-content: center;
+            gap: 2rem;
+            padding: 1rem;
+            box-shadow: 0 2px 4px rgba(0,0,0,0.05);
+            position: sticky;
+            top: 0;
+            z-index: 100;
+        }
+
+        nav a {
+            text-decoration: none;
+            color: var(--text-color);
+            font-weight: 600;
+            transition: color 0.3s ease;
+        }
+
+        nav a:hover {
+            color: var(--primary-color);
+        }
+
+        main {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 2rem 1rem;
+        }
+
+        section {
+            margin-bottom: 3rem;
+        }
+
+        section h2 {
+            font-size: 2rem;
+            margin-bottom: 1.5rem;
+            border-bottom: 3px solid var(--primary-color);
+            display: inline-block;
+            padding-bottom: 0.3rem;
+        }
+
+        .grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 2rem;
+        }
+
+        .card {
+            background-color: var(--card-bg);
+            border-radius: 10px;
+            overflow: hidden;
+            box-shadow: 0 4px 15px rgba(0,0,0,0.08);
+            transition: transform 0.3s ease;
+        }
+
+        .card:hover {
+            transform: translateY(-5px);
+        }
+
+        .card img {
+            width: 100%;
+            height: 200px;
+            object-fit: cover;
+        }
+
+        .card-content {
+            padding: 1.5rem;
+        }
+
+        .card-content h3 {
+            font-size: 1.4rem;
+            margin-bottom: 0.5rem;
+            color: var(--primary-color);
+        }
+
+        .card-content p {
+            font-size: 0.95rem;
+            color: #666666;
+        }
+
+        footer {
+            background-color: #333333;
+            color: white;
+            text-align: center;
+            padding: 1.5rem;
+            margin-top: 3rem;
+            font-size: 0.9rem;
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <h1>The Wonderful World of Cats</h1>
+        <p>Your ultimate guide to feline breeds, preferences, and nutrition.</p>
+    </header>
+
+    <nav>
+        <a href="#breeds">Cat Breeds</a>
+        <a href="#likes">What They Like</a>
+        <a href="#diet">What They Eat</a>
+    </nav>
+
+    <main>
+        <!-- Section 1: Different Kinds of Cats -->
+        <section id="breeds">
+            <h2>Different Kinds of Cats</h2>
+            <div class="grid">
+                <div class="card">
+                    <img src="https://images.unsplash.com/photo-1514888286974-6c03e2ca1dba" alt="Persian Cat">
+                    <div class="card-content">
+                        <h3>Persian</h3>
+                        <p>Recognized by their luxurious long coats, flat faces, and exceptionally calm, gentle personalities.</p>
+                    </div>
+                </div>
+                <div class="card">
+                    <img src="https://images.unsplash.com/photo-1573865526739-10659fec78a5" alt="Maine Coon Cat">
+                    <div class="card-content">
+                        <h3>Maine Coon</h3>
+                        <p>One of the largest domesticated cat breeds, famous for their friendly nature, tufted ears, and shaggy fur.</p>
+                    </div>
+                </div>
+                <div class="card">
+                    <img src="https://images.unsplash.com/photo-1513360371669-4adf3dd7dff8" alt="Siamese Cat">
+                    <div class="card-content">
+                        <h3>Siamese</h3>
+                        <p>Easily identified by their striking blue eyes, color-point coats, and highly vocal, social demeanor.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Section 2: What They Like -->
+        <section id="likes">
+            <h2>What Cats Like</h2>
+            <div class="grid">
+                <div class="card">
+                    <img src="https://images.unsplash.com/photo-1548802673-380ab8ebc7b7" alt="Cat sunbathing">
+                    <div class="card-content">
+                        <h3>Sunbathing</h3>
+                        <p>Cats instinctively seek out warm spots of sunlight streaming through windows to lounge and nap.</p>
+                    </div>
+                </div>
+                <div class="card">
+                    <img src="https://images.unsplash.com/photo-1561948955-570b270e7c36" alt="Cat playing with toy">
+                    <div class="card-content">
+                        <h3>Interactive Toys</h3>
+                        <p>Feather wands, puzzle feeders, and toy mice stimulate their natural hunting instincts and keep them active.</p>
+                    </div>
+                </div>
+                <div class="card">
+                    <img src="https://images.unsplash.com/photo-1533738363-b7f9aef128ce" alt="Cat scratching post">
+                    <div class="card-content">
+                        <h3>Scratching Posts</h3>
+                        <p>Crucial for stretching their muscles, keeping their claws healthy, and marking territory safely.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Section 3: What They Eat -->
+        <section id="diet">
+            <h2>What Cats Eat</h2>
+            <div class="grid">
+                <div class="card">
+                    <img src="https://images.unsplash.com/photo-1589924691995-400dc9ecc119" alt="Cat wet food">
+                    <div class="card-content">
+                        <h3>Wet Food</h3>
+                        <p>Provides vital hydration and high protein content to support kidney function and overall feline health.</p>
+                    </div>
+                </div>
+                <div class="card">
+                    <img src="https://images.unsplash.com/photo-1563484566270-e483e582e0df" alt="Cat dry kibble">
+                    <div class="card-content">
+                        <h3>Dry Kibble</h3>
+                        <p>Convenient, calorie-dense nutrition that can help support dental health when formulated correctly.</p>
+                    </div>
+                </div>
+                <div class="card">
+                    <img src="https://images.unsplash.com/photo-1518791841217-8f162f1e1131" alt="Cat grass">
+                    <div class="card-content">
+                        <h3>Cat Grass</h3>
+                        <p>Safe greens that provide trace nutrients, aid in digestion, and help expel hairballs naturally.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2026 All About Cats. Built for cat lovers everywhere.</p>
+    </footer>
+
+</body>
+</html>
